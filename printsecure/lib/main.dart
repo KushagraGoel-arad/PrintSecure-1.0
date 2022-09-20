@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/o': (context) => loginScreen(),
+        '/': (context) => loginScreen(),
         '/b': (context) => createAccountAs(),
-        '/': (context) => homePageCustomer(),
+        '/t': (context) => homePageCustomer(),
         '/l': (context) => homePageVendor(),
         '/m': (context) => selectedImgPage(),
       },

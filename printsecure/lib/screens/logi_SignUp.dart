@@ -66,43 +66,40 @@ class _loginScreenState extends State<loginScreen> {
             ]),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(
-                Icons.email_outlined,
-                size: 30,
-                color: Color.fromARGB(255, 20, 77, 22),
+              icon: Image.asset('assets/login/Google logo.png'),
+              label: Text(
+                'Google',
+                style: TextStyle(color: Colors.black),
               ),
-              label: Text(''),
               style: ElevatedButton.styleFrom(
-                shape:
-                    RoundedRectangleBorder(borderRadius: BorderRadius.only()),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(24))),
                 backgroundColor: Colors.white,
               ),
             ),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(
-                Icons.email_outlined,
-                size: 30,
-                color: Color.fromARGB(255, 20, 77, 22),
+              icon: Image.asset('assets/login/facebook.png'),
+              label: Text(
+                'Facebook',
+                style: TextStyle(color: Colors.black),
               ),
-              label: Text(''),
               style: ElevatedButton.styleFrom(
-                shape:
-                    RoundedRectangleBorder(borderRadius: BorderRadius.only()),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(24))),
                 backgroundColor: Colors.white,
               ),
             ),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(
-                Icons.email_outlined,
-                size: 30,
-                color: Color.fromARGB(255, 20, 77, 22),
+              icon: Image.asset('assets/login/apple.png'),
+              label: Text(
+                'Apple',
+                style: TextStyle(color: Colors.black),
               ),
-              label: Text(''),
               style: ElevatedButton.styleFrom(
-                shape:
-                    RoundedRectangleBorder(borderRadius: BorderRadius.only()),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(24))),
                 backgroundColor: Colors.white,
               ),
             ),

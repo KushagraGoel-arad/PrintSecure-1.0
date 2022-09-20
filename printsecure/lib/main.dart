@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
+        '/o': (context) => loginScreen(),
+        '/b': (context) => createAccountAs(),
         '/': (context) => homePageCustomer(),
-        '/create': (context) => createAccountAs(),
-        '/homeCustomer': (context) => homePageCustomer(),
-        '/homeVendor': (context) => homePageVendor(),
-        '/selectImgPage': (context) => selectedImgPage(),
+        '/l': (context) => homePageVendor(),
+        '/m': (context) => selectedImgPage(),
       },
     );
   }

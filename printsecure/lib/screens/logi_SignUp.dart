@@ -37,7 +37,7 @@ class _loginScreenState extends State<loginScreen> {
             ),
             const Text(
               'privacy matters',
-              style: TextStyle(fontWeight: FontWeight.w500),
+              style: TextStyle(fontWeight: FontWeight.w400),
             ),
             SizedBox(
               height: 20,
@@ -51,7 +51,10 @@ class _loginScreenState extends State<loginScreen> {
                       height: 36,
                     )),
               ),
-              Text("Log in or Sign up With"),
+              Text(
+                "Log in or Sign up With",
+                style: TextStyle(fontWeight: FontWeight.w500),
+              ),
               Expanded(
                 child: new Container(
                     margin: const EdgeInsets.only(left: 20.0, right: 10.0),
@@ -111,12 +114,15 @@ class _loginScreenState extends State<loginScreen> {
                 child: new Container(
                     margin: const EdgeInsets.only(left: 10.0, right: 20.0),
                     child: Divider(
-                      thickness: 1.0,
+                      // thickness: 1.0,
                       color: Color.fromARGB(255, 7, 78, 137),
                       height: 36,
                     )),
               ),
-              Text("Copyright @ 2022"),
+              Text(
+                "Copyright @ 2022",
+                style: TextStyle(fontWeight: FontWeight.w500),
+              ),
               Expanded(
                 child: new Container(
                     margin: const EdgeInsets.only(left: 20.0, right: 10.0),

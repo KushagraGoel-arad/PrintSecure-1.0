@@ -28,13 +28,18 @@ class MyDrawer extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          CircleAvatar(
-            backgroundColor: Color.fromARGB(255, 247, 222, 1),
-            maxRadius: 80,
+          Positioned(
+            height: 100,
+            child: CircleAvatar(
+              backgroundColor: Color.fromARGB(255, 247, 222, 1),
+              maxRadius: 80,
+            ),
           ),
+
           Container(
             margin: EdgeInsets.fromLTRB(30, 0, 30, 100),
             height: 350,
+            
             decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(color: Colors.black),
@@ -45,10 +50,27 @@ class MyDrawer extends StatelessWidget {
                   bottomRight: Radius.circular(24),
                 )),
           ),
-          SizedBox(
-            height: 70,
+          // SizedBox(
+          //   height: 0,
+          // ),
+          Row(
+            children: [
+              Padding(padding: EdgeInsets.fromLTRB(65, 25, 50, 60)),
+              ElevatedButton(
+                child: Text(
+                  'Logout',
+                  style: TextStyle(color: Colors.black),
+                ),
+                style: ElevatedButton.styleFrom(
+                  side: BorderSide(width: 2, color: Colors.black),
+                  backgroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                ),
+                onPressed: () {},
+              ),
+            ],
           ),
-          Container()
         ],
       ),
     );

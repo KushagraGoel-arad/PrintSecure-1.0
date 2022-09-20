@@ -111,7 +111,7 @@ class _homePageCustomerState extends State<homePageCustomer> {
             ),
             padding: EdgeInsets.all(6.0),
             margin: EdgeInsets.fromLTRB(30, 0, 30, 10),
-            height: 360,
+            height: 355,
             decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(color: Colors.black),
@@ -122,6 +122,23 @@ class _homePageCustomerState extends State<homePageCustomer> {
                   bottomRight: Radius.circular(24),
                 )),
           ),
+          SizedBox(
+            height: 130,
+          ),
+          Row(
+            children: [
+              Text(
+                "                                        secured by ",
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                "Print Secure",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.blueGrey),
+              ),
+            ],
+          )
         ],
       ),
       drawer: MyDrawer(),

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (context) => selectedImgPage(),
+        '/': (context) => homePageCustomer(),
         '/create': (context) => createAccountAs(),
         '/homeCustomer': (context) => homePageCustomer(),
         '/homeVendor': (context) => homePageVendor(),

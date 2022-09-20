@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyDrawer extends StatelessWidget {
-  const MyDrawer({Key? key}) : super(key: key);
+class MyDrawer_vendor extends StatelessWidget {
+  const MyDrawer_vendor({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class MyDrawer extends StatelessWidget {
           //   ),
           // ),
           SizedBox(
-            height: 40,
+            height: 30,
           ),
           Positioned(
             height: 100,
@@ -36,7 +36,7 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
 
           Container(
@@ -46,61 +46,10 @@ class MyDrawer extends StatelessWidget {
                   "Username",
                   style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                 ),
-                Text(
-                  "Useremailid@gmail.com",
-                  style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600),
-                ),
                 SizedBox(
                   height: 30,
                 ),
-                Center(
-                  child: ElevatedButton.icon(
-                    // child: Text(
-                    //   'Change Password',
-                    //   style: TextStyle(color: Colors.black),
-                    // ),
-                    style: ElevatedButton.styleFrom(
-                      side: BorderSide(color: Colors.lightBlue),
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15))),
-                    ),
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.key,
-                      color: Colors.black,
-                      size: 24.0,
-                    ),
-                    label: Text(
-                      'Change Password',
-                      style: TextStyle(color: Colors.black),
-                    ),
-                  ),
-                ),
-                Center(
-                  child: ElevatedButton.icon(
-                    // child: Text(
-                    //   'Change Password',
-                    //   style: TextStyle(color: Colors.black),
-                    // ),
-                    style: ElevatedButton.styleFrom(
-                      side: BorderSide(color: Colors.lightBlue),
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15))),
-                    ),
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.print,
-                      color: Colors.black,
-                      size: 24.0,
-                    ),
-                    label: Text(
-                      'About PrintSecure',
-                      style: TextStyle(color: Colors.black),
-                    ),
-                  ),
-                ),
+                Center(child: Image.asset("assets/login/barcode.png")),
                 SizedBox(
                   height: 20,
                 ),
@@ -116,8 +65,8 @@ class MyDrawer extends StatelessWidget {
                 Image.asset("assets/login/Rectangle 82.png"),
               ],
             ),
-            margin: EdgeInsets.fromLTRB(30, 0, 30, 10),
-            height: 270,
+            margin: EdgeInsets.fromLTRB(20, 0, 20, 10),
+            height: 432,
             decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(color: Colors.black),
@@ -133,7 +82,36 @@ class MyDrawer extends StatelessWidget {
           // ),
           Row(
             children: [
-              Padding(padding: EdgeInsets.fromLTRB(65, 25, 50, 60)),
+              SizedBox(
+                width: 20,
+              ),
+              Center(
+                child: ElevatedButton.icon(
+                  // child: Text(
+                  //   'Change Password',
+                  //   style: TextStyle(color: Colors.black),
+                  // ),
+                  style: ElevatedButton.styleFrom(
+                    side: BorderSide(color: Colors.lightBlue),
+                    backgroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15))),
+                  ),
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.share,
+                    color: Colors.black,
+                    size: 24.0,
+                  ),
+                  label: Text(
+                    'Share QR',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 40,
+              ),
               Center(
                 child: ElevatedButton.icon(
                   // child: Text(
@@ -159,6 +137,9 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          SizedBox(
+            height: 13,
           ),
 
           Row(

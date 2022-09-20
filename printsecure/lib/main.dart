@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/o': (context) => loginScreen(),
         '/b': (context) => createAccountAs(),
-        '/': (context) => homePageCustomer(),
-        '/l': (context) => homePageVendor(),
+        '/l': (context) => homePageCustomer(),
+        '/': (context) => homePageVendor(),
         '/m': (context) => selectedImgPage(),
       },
     );

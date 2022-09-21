@@ -8,9 +8,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 Future main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
   runApp(const MyApp());
 }
@@ -28,11 +27,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/e': (context) => loginScreen(),
+        '/': (context) => loginScreen(),
         '/o': (context) => createAccountAs(),
         '/i': (context) => homePageCustomer(),
         '/l': (context) => homePageVendor(),
-        '/': (context) => selectedImgPage(),
+        '/e': (context) => selectedImgPage(),
       },
     );
   }

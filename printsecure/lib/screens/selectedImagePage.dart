@@ -39,10 +39,16 @@ class _selectedImgPageState extends State<selectedImgPage> {
       body: Column(
         children: [
           Container(
+            child: Center(
+              child: Text(
+                "Selected Image",
+                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+              ),
+            ),
             margin: EdgeInsets.fromLTRB(30, 0, 30, 100),
             height: 300,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Colors.grey,
               border: Border.all(color: Colors.black),
               // borderRadius: BorderRadius.only(
               //   topLeft: Radius.circular(24),

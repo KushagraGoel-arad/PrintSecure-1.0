@@ -6,7 +6,7 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final imageUrl = "https://avatarfiles.alphacoders.com/321/32154.gif";
+    final imageUrl = "https://avatarfiles.alphacoders.com/321/32154.gif";
     return Drawer(
       backgroundColor: Colors.white,
       child: ListView(
@@ -31,7 +31,9 @@ class MyDrawer extends StatelessWidget {
           Positioned(
             height: 100,
             child: CircleAvatar(
-              backgroundColor: Color.fromARGB(255, 217, 217, 215),
+              // backgroundColor: Color.fromARGB(255, 217, 217, 215),
+              backgroundImage: NetworkImage(imageUrl),
+
               maxRadius: 80,
             ),
           ),

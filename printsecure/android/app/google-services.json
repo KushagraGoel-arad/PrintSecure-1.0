@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102452154420",
+    "project_id": "print-39805",
+    "storage_bucket": "print-39805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102452154420:android:23e61ab41ac131b6803a61",
+        "android_client_info": {
+          "package_name": "com.example.printsecure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102452154420-c93hjc3enoppvgl60si0g6f929thc404.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEMG_i_CAznq2aOniMbRbmLLOmSyi_kb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102452154420-c93hjc3enoppvgl60si0g6f929thc404.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

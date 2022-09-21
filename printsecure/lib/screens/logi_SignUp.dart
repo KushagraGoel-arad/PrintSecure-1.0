@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:printsecure/provider/google_sign_in.dart';
+import 'package:provider/provider.dart';
 
 class loginScreen extends StatefulWidget {
   loginScreen({Key? key}) : super(key: key);
@@ -65,7 +67,11 @@ class _loginScreenState extends State<loginScreen> {
               ),
             ]),
             ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                final provider =
+                    Provider.of<GoogleSignInProvider>(context, listen: false);
+                provider.googleLogin();
+              },
               icon: Image.asset('assets/login/Google logo.png'),
               label: Text(
                 'Google',

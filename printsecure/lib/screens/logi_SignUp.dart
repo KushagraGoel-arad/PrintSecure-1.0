@@ -74,7 +74,7 @@ class _loginScreenState extends State<loginScreen> {
               },
               icon: Image.asset('assets/login/Google logo.png'),
               label: Text(
-                'Google',
+                'Google     ',
                 style: TextStyle(color: Colors.black),
               ),
               style: ElevatedButton.styleFrom(
@@ -100,7 +100,7 @@ class _loginScreenState extends State<loginScreen> {
               onPressed: () {},
               icon: Image.asset('assets/login/apple.png'),
               label: Text(
-                'Apple',
+                'Apple         ',
                 style: TextStyle(color: Colors.black),
               ),
               style: ElevatedButton.styleFrom(

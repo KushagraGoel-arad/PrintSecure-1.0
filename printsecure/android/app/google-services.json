@@ -37,6 +37,13 @@
             {
               "client_id": "102452154420-c93hjc3enoppvgl60si0g6f929thc404.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "102452154420-rarm3j4dvpo614ravscmrg73kgohhqfi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.printsecure"
+              }
             }
           ]
         }

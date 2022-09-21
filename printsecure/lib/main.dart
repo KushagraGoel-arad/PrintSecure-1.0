@@ -4,8 +4,14 @@ import 'package:printsecure/screens/homePageForCustomer.dart';
 import 'package:printsecure/screens/homePageForVendor.dart';
 import 'package:printsecure/screens/logi_SignUp.dart';
 import 'package:printsecure/screens/selectedImagePage.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
 }
 
